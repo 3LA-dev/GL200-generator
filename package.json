@@ -1,0 +1,39 @@
+{
+    "name": "tk103simulator",
+    "version": "0.0.0",
+    "description": "tk103 GPS protocol simulator",
+    "engine": "node >= 0.10.5",
+    "keywords": [
+        "gps",
+        "tracker",
+        "location.io",
+        "location.io",
+        "location",
+        "io",
+        "location-io",
+        "Xexun",
+        "Tk103"
+    ],
+    "dependencies": {
+        "async": "0.1.x",
+        "optimist": "0.6.0"
+    },
+    "devDependencies": {
+        "vows": ">= 0.7.0",
+        "jshint": "1.1",
+        "tracker-simulator": "git://github.com/alexbirkett/tracker-simulator.git#master"
+    },
+    "scripts": {
+        "test": "vows test/*test.js protocol/test/*test.js protocol/tk103/test/*test.js protocol/gotop/test/*test.js protocol/gps108watch/test/*test.js protocol/tr203/test/*test.js",
+        "pretest": "node_modules/.bin/jshint index.js connection.js modules.js protocol/ test/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alexbirkett/tk103simulator.git"
+    },
+    "homepage": "http://location.io",
+    "license": "MIT",
+    "main": "index",
+    "bin" : { "tk103simulator" : "index.js" },
+    "preferGlobal": true
+}
