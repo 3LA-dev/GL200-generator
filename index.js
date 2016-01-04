@@ -138,7 +138,7 @@ var client = net.connect({
 
 +RESP:GTPNL,020102,123456789123654,,0,0,5217721199947,20,127.5,123,340,-98.707299,20.102827,20151202164516,0334,0020,ffff,1234,00,100,20151202164516,FFFF,$
 */
-						case '/rtl':
+						case '/pnl':
 							console.log('--------------------+RESP:GTPNL SEND!!'); 
 							console.log('\n+RESP:GTPNL,' + frameBase+'\n'); 
 							client.write('+RESP:GTPNL,' + frameBase);
